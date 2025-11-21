@@ -61,6 +61,7 @@ public class GameActivity extends AppCompatActivity {
                 finalDrawable = R.drawable.ace_of_spades;
                 finalText = R.string.ace_of_spades;
                 showFragment(StepOne.newInstance(gameId));
+
                 totalTimedDuration += STEP_DURATION;
                 handler.postDelayed(() -> {
                     showFragment(StepTwo.newInstance(gameId));
@@ -68,14 +69,9 @@ public class GameActivity extends AppCompatActivity {
 
                 totalTimedDuration += STEP_DURATION;
                 handler.postDelayed(() -> {
-
-                    showFragment(StepThree.newInstance(gameId));
-
-                }, totalTimedDuration);
-                totalTimedDuration += STEP_DURATION;
-                handler.postDelayed(() -> {
                     showFragment(StepFour.newInstance(gameId, finalDrawable));
                 }, totalTimedDuration);
+
                 totalTimedDuration += STEP_DURATION;
                 handler.postDelayed(() -> {
                     showFragment(StepFive.newInstance(gameId, finalDrawable, finalText));
@@ -85,14 +81,10 @@ public class GameActivity extends AppCompatActivity {
                 finalDrawable = R.drawable._4_of_spades;
                 finalText = R.string.four_of_spades;
                 showFragment(StepOne.newInstance(gameId));
-                totalTimedDuration += STEP_DURATION;
-                handler.postDelayed(() -> {
-                    showFragment(StepTwo.newInstance(gameId));
-                }, totalTimedDuration);
 
                 totalTimedDuration += STEP_DURATION;
                 handler.postDelayed(() -> {
-                    showFragment(StepThree.newInstance(gameId));
+                    showFragment(StepTwo.newInstance(gameId));
                 }, totalTimedDuration);
 
                 totalTimedDuration += STEP_DURATION;
@@ -117,11 +109,6 @@ public class GameActivity extends AppCompatActivity {
 
                 totalTimedDuration += STEP_DURATION;
                 handler.postDelayed(() -> {
-                    showFragment(StepThree.newInstance(gameId));
-                }, totalTimedDuration);
-
-                totalTimedDuration += STEP_DURATION;
-                handler.postDelayed(() -> {
                     showFragment(StepFour.newInstance(gameId, finalDrawable));
                 }, totalTimedDuration);
 
@@ -138,10 +125,6 @@ public class GameActivity extends AppCompatActivity {
                 totalTimedDuration += STEP_DURATION;
                 handler.postDelayed(() -> {
                     showFragment(StepTwo.newInstance(gameId));
-                }, totalTimedDuration);
-               totalTimedDuration += STEP_DURATION;
-                handler.postDelayed(() -> {
-                    showFragment(StepThree.newInstance(gameId));
                 }, totalTimedDuration);
 
                 totalTimedDuration += STEP_DURATION;
@@ -163,11 +146,6 @@ public class GameActivity extends AppCompatActivity {
                 totalTimedDuration += STEP_DURATION;
                 handler.postDelayed(() -> {
                     showFragment(StepTwo.newInstance(gameId));
-                }, totalTimedDuration);
-
-                totalTimedDuration += STEP_DURATION;
-                handler.postDelayed(() -> {
-                    showFragment(StepThree.newInstance(gameId));
                 }, totalTimedDuration);
 
                 totalTimedDuration += STEP_DURATION;
