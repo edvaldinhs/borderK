@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BorderK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_name">Game Name</string>
+    <string name="ace_of_spades">QUILOMETRAGEM</string>
+    <string name="four_of_spades">PÁSCOA</string>
+    <string name="four_of_clubs">ALAVANCA</string>
+    <string name="eight_of_hearts">ESPIÃO</string>
+    <string name="seven_of_diamonds">BLIND DEALER</string>
+</resources>
