@@ -19,6 +19,7 @@ import com.example.borderk.games.StepFour;
 import com.example.borderk.games.StepOne;
 import com.example.borderk.games.StepTwo;
 import com.example.borderk.games.StepThree;
+import com.example.borderk.games.fourofspades.Pascoa;
 import com.example.borderk.games.sevenofgold.BlindDealer;
 import com.example.borderk.service.ControlService;
 
@@ -88,7 +89,7 @@ public class GameActivity extends AppCompatActivity {
                     showFragment(StepTwo.newInstance(gameId));
                 }, totalTimedDuration);
 
-                totalTimedDuration += STEP_DURATION;
+                totalTimedDuration += STEP_DURATION + 2000;
                 handler.postDelayed(() -> {
                     showFragment(StepFour.newInstance(gameId, finalDrawable));
                 }, totalTimedDuration);
@@ -96,6 +97,11 @@ public class GameActivity extends AppCompatActivity {
                 totalTimedDuration += STEP_DURATION;
                 handler.postDelayed(() -> {
                     showFragment(StepFive.newInstance(gameId, finalDrawable, finalText));
+                }, totalTimedDuration);
+
+                totalTimedDuration += STEP_DURATION;
+                handler.postDelayed(() -> {
+                    showFragment(Pascoa.newInstance(gameId, finalDrawable, finalText));
                 }, totalTimedDuration);
                 break;
             case "FOUR_OF_CLUBS":
